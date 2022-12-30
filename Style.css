@@ -1,0 +1,543 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+/*---------------------------------------------*/
+.demo{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    right:40px;
+    top: 70px;
+    display: none;
+
+}
+.demo div  a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 40px 100px;
+    transition: 0.3s ease;
+    
+    
+}
+.demo div a:hover{
+    background-color: rgba(00, 00, 00, 0.7);
+    color: white;
+}
+#sss{
+    display: none;
+}
+.shmoga{
+    display: block;
+}
+/* -----------------------------------------*/
+
+/*header*/
+
+
+.logo{
+    display: inline-block;
+    padding:30px 0 30px 40px;
+}
+.logo h3{
+    font-weight: normal;
+    font-size: 25px;
+}
+.tools{
+    
+    float: right;
+    padding: 30px 40px 30px 0;
+    font-size: 25px;
+    
+}
+.tools button{
+    border: none;
+    
+}
+
+
+/*
+.tools .tools_menu div a{
+    color: rgb(229, 226, 226);
+    font-size: 20px;
+    letter-spacing: -1px;
+    font-weight: 500;
+    display: block;
+    padding: 15px 75px;
+}
+
+.tools .tools_menu div:first-child a{ padding: 30px 75px;}
+
+.tools .tools_menu div a:hover{ 
+    background-color: rgba(255, 255, 255, 0.5);
+}
+*/
+/*content*/
+.content{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    max-width: 100%;
+}
+
+.content img{
+    width: 100%;
+    height: auto;
+
+}
+
+.scrol{
+    grid-area: 4/1/5/5;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.scrol .ul_scrol li{
+    display: inline-block;
+    
+}
+
+.scrol .ul_scrol li a {
+    color:#000;
+    padding: 5px 9px;
+    transition: 0.3s ease;
+    margin: 0;
+    display: block;
+    text-decoration: none;
+}
+.scrol .ul_scrol li a:hover{
+    background-color: #000;
+    color: white;
+
+}
+
+
+/*About Me*/
+
+.container_about{
+    background-color: #666;
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+}
+.About_Me{
+    max-width: 50%;
+    padding-bottom: 35px;
+}
+.About_Me .title{
+    text-align: center;
+    padding:35px 0;
+    font-weight: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+.About_Me img{
+    width: 100%;
+    height: auto;
+}
+.About_Me h4{
+    font-weight: normal;
+    font-size: 20px;
+    padding: 25px 0 15px 0;
+}
+
+.About_Me .some_information{
+    font-size: 15px;
+    font-weight:normal;
+}
+.About_Me .mail{
+    padding:25px 0 20px 0;
+}
+
+.T_Skills h1{
+    padding: 35px 0  25px 0;
+    font-weight: normal;
+    font-size: 30px;
+}
+.T_Skills h6{
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin: 5px 0;
+}
+.T_Skills .aaa{
+    
+    background-color: white;
+    color: #000;
+    border-radius: 2px;
+    
+}
+
+.bbb {
+    text-align: center;
+    border-radius: 2px;
+    padding: 3px;
+    background-color:#888;
+}
+.T_Skills button{
+    padding: 13px 23px;
+    margin: 50px 0;
+    font-size: 15px;
+    border: none;
+    transition: 0.5s ease;
+    font-weight: 500;
+}
+.T_Skills button:hover{
+    background-color: #444;
+    color: white;
+}
+hr{
+    border-top: none;
+    border-left: none;
+    border-right:none;
+    color: #888;
+    margin: 10px 0;
+    
+}
+/*How much l charge*/
+
+.how_much{color: #000;}
+.how_much h1{
+    font-size: 22px;
+    font-weight: normal;
+    color: white;
+    padding:30px 0 20px 0;
+    
+}
+.Basic h2 , .Pro h2{
+    padding: 2px;
+    font-weight: normal;
+}
+.container_{
+    display: grid;
+    grid-template-columns: repeat(2,48%);
+    grid-gap: 4%;
+    margin-top: 20px;
+}
+.Basic{
+    
+    background-color: white;
+}
+.Basic div{
+    border-bottom: 2px solid rgb(236, 231, 231);
+    padding: 13px 0;
+    text-align: center;
+    color: #555;
+}
+.Basic div:first-child{
+    background-color: black;
+    color: white;
+    padding: 30px 50px;
+}
+.Pro{
+    
+    background-color: white;
+}
+.Pro div{
+    border-bottom: 2px solid rgb(236, 231, 231);
+    padding: 13px 0;
+    text-align: center;
+    color: #555;
+}
+.Pro div:first-child{
+    background-color: black;
+    color: white;
+    padding: 30px 0;
+}
+.Pro div>h3 , .Basic div>h3{
+    font-size: 27px;
+    color: #000;
+    margin-bottom: 5px;
+}
+.Pro div>h6 , .Basic div>h6{
+    color:#999;
+    font-size: 14px;
+    font-weight: normal;
+}   
+.Pro sup , .Basic sup{
+    font-size: 25px;
+}
+
+.Pro span , .Basic span{
+    font-size: 30px;
+    font-weight: normal;
+}
+.Pro div>h3 , .Basic div>h3{
+    padding-top: 7px;
+}
+.Pro div>h6 , .Basic div>h6{
+    padding-bottom: 7px;
+}
+.Pro div:last-child , .Basic div:last-child{
+    padding: 15px 0;
+    background-color: rgb(236, 231, 231);
+}
+.Pro div:last-child  button, .Basic div:last-child button{
+    padding: 12px 25px ;
+    background-color: white;
+    color: #000;
+    border: none;
+    transition: 0.5s ease;
+    border-radius: 2px;
+}
+.Pro div:last-child  button:hover, .Basic div:last-child button:hover{
+    background-color: #777;
+    color: white;
+}
+/*Contact*/
+
+.contact_me{
+    background-color: rgb(236, 231, 231);
+}
+.content_contact{
+    max-width: 47%;
+    margin: auto;
+    
+    padding: 30px 0;
+}
+
+.content_contact p{
+    padding: 10px 0;
+    color: #333;
+    font-size: 15px;
+}
+.content_contact h1{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 200;
+    letter-spacing: -2px;
+    font-family:monospace;
+    word-spacing:-5px;
+    
+}
+form{
+    color: #444;
+}
+
+
+form  input[type="text"]{
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+    border: none;
+    box-shadow: 0 0 2px #777;
+    font-size: 20px;
+    color:#333;
+    border-radius: 2px;
+    
+}
+form  input[type="text"]:focus{
+   outline: none;
+    
+}
+.Name , .Email , .Message{
+    padding: 5px 0;
+}
+
+form .Send_M{
+    width: 100%;
+    padding: 10px 0;
+    margin: 20px 0;
+    background-color: #000;
+    color: white;
+    border: none;
+    font-size: 16px;
+    transition: 0.5s ease;
+    border-radius: 2px;
+
+}
+form .Send_M:hover{
+    background-color: rgb(202, 202, 202);
+    color: #000;
+}
+
+/*milti_about*/
+
+.milti_about{
+    display: grid;
+    grid-template-columns:repeat(3 , calc(96% / 3)) ;
+    background-color:#888;
+    padding: 50px 35px;
+    grid-column-gap: 2%;
+
+}
+/*start info*/
+.milti_about .info{
+    padding: 0 0 0 25px;
+}
+.milti_about .info h1{
+    padding: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 25px;
+}
+.milti_about .info p {
+    color: #222;
+    font-size: 15px;
+}
+/*end info*/
+/*start blog*/
+
+.milti_about .blog h1{
+    font-weight: 400 ;
+    padding: 0 0 10px 0;
+    font-size: 25px;
+   
+}
+.milti_about .blog .lorem{
+    padding-top:25px ;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 20px;
+}
+.milti_about .blog .lorem:last-child{
+    padding-top: 7px;
+}
+
+.lorem h3{
+    font-weight: 300;
+    color: #222;
+}
+.lorem p {
+    color: #222;
+}
+
+
+
+/*end blog*/
+/*start tags*/
+
+
+.con_tags h1{
+    font-weight: 400 ;
+    padding: 0 0 10px 0;
+    font-size: 25px;
+}
+.tags_line_1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tags_line_1 div {
+    padding: 9px 3px;
+}
+.tags_line_1 div a:hover{
+    background-color: black;
+    color: white;
+}
+.tags_line_1 div a {
+    background-color: #777;
+    color: rgb(224, 219, 219);
+    text-decoration: none;
+    padding: 0 3px ;
+    font-size: 14px;
+
+
+}
+.tags_line_1 div:first-child a{
+    background-color:#000;
+    border-radius: 2px;
+}
+/*end milti*/
+/*start footer*/
+.footer{
+    background-color: #000;
+    text-align: center;
+    color: white;
+    padding: 25px 0;
+    font-size: 16px;
+}
+.footer a{
+    color: white;
+
+}
+
+/*end footer*/
+
+
+
+/*media quiery*/
+
+
+
+@media screen and (max-width:900px) {
+
+    .content{
+        grid-template-columns: 1fr 1fr ;
+    }
+    .scrol{
+        grid-area: 7/1/8/3;
+        text-align: center;
+        padding: 30px 0;
+    }
+    .About_Me{
+        max-width: 100%; 
+        padding:0 10px 35px 10px;
+       
+    }
+    .tags_line_1 div a {
+       
+        
+        
+        padding: 3px 5px ;
+        font-size: 20px;
+    
+    
+    }
+    .milti_about{
+        display: grid;
+        grid-template-columns:100% ;
+        grid-row-gap: 4%;
+    
+    }
+    .milti_about .info{
+        padding:0;
+    }
+    .content_contact{
+        max-width: 100%;
+        margin: auto;
+        
+        padding: 30px 20px;
+    }
+
+}
+@media screen and (max-width:600px) {
+
+
+    .content{
+        grid-template-columns: 100%;
+    }
+    .About_Me{
+        max-width: 100%; 
+        padding:0 10px 35px 10px;
+    }
+    .scrol{
+        grid-area: 13/1/14/2;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .container_{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 5%;
+        margin-top: 20px;
+        padding-bottom: 30px;
+    }
+
+}
+
+
